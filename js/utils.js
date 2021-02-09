@@ -1,8 +1,7 @@
 export {getCanvasSize};
 
-const getCanvasSize = (inputField, minSize = 8, normalSize = 32, maxSize = 128) => {
+const getCanvasSize = (inputField, normalSize = 32) => {
     const defaultSize = 32;
-    let canvasSize= inputField.value;   
-    return (canvasSize >= minSize && canvasSize <= maxSize) ? canvasSize 
-    : (normalSize >= minSize && normalSize <= maxSize) ? normalSize : defaultSize;
+    let canvasSize = inputField.value;   
+    return (canvasSize > 0 ) ? canvasSize : (normalSize > 0) ? normalSize : defaultSize;
 }
