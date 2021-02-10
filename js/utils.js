@@ -7,11 +7,12 @@ const getCanvasSize = (inputField, normalSize = 32) => {
 }
 
 const createSquares = (canvasSize = 32) => {
-    const squares = ``;
-    for (let i = 0; i <= canvasSize; i++){
-        squares += `
-                <div class="default clean"></div>
-        `;
+    let squares = ``;
+    for (let lines = 0; lines < canvasSize; lines++){
+        for (let columns = 0; columns < canvasSize; columns++){
+            squares += `<div class="default clean"></div>`;
+        }
+        squares+=`<br>`;
     }
     return squares;
 }
