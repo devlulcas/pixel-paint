@@ -1,4 +1,4 @@
-export {getCanvasSize, createSquares, createCanvas, createGrid};
+export {getCanvasSize, createSquares, createCanvas, createGrid, applyGridStyle};
 
 function getCanvasSize(inputField, normalSize = 32) {
     const defaultSize = 32;
@@ -24,4 +24,9 @@ function createGrid(canvasSize = 32, gridSize = '10px') {
         grid += ` ${gridSize}`;
     }
     return grid;
+}
+
+function applyGridStyle(gridTemplate = 'auto', container) {
+    container.style.gridTemplateColumns = gridTemplate;
+    container.style.gridTemplateRows = gridTemplate;
 }
