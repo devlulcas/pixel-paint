@@ -1,4 +1,4 @@
-export {getCanvasSize, createSquares, createCanvas};
+export {getCanvasSize, createSquares, createCanvas, createGrid};
 
 const getCanvasSize = (inputField, normalSize = 32) => {
     const defaultSize = 32;
