@@ -1,9 +1,10 @@
 export {getCanvasSize, createSquares, createCanvas, createGrid, applyGridStyle};
 
-function getCanvasSize(inputField, normalSize = 32) {
+function getCanvasSize(inputField, minSize = 8, normalSize = 32, maxSize = 128) {
     const defaultSize = 32;
     let canvasSize = inputField.value;
-    return (canvasSize > 0) ? canvasSize : (normalSize > 0) ? normalSize : defaultSize;
+    return (canvasSize >= minSize && canvasSize <= maxSize) ? canvasSize 
+    : (normalSize >= minSize && normalSize <= maxSize) ? normalSize : defaultSize;
 }
 
 function createSquares(canvasSize = 32) {
