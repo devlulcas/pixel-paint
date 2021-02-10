@@ -1,0 +1,14 @@
+.default {
+  border: 1px solid #000000;
+  padding: 5px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.clean {
+  background-color: #ffffff;
+}
+
+.black {
+    background-color: #000000;
+}
