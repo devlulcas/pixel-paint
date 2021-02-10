@@ -4,7 +4,7 @@ const btnChangeSize = document.getElementById('btn-canvas-size');
 const container = document.getElementById('container');
 
 btnChangeSize.onclick = () => {
-    const canvasSize = getCanvasSize(sizeInputField, 32);
+    const canvasSize = getCanvasSize(sizeInputField, 8, 32, 64);
     const squares = createSquares(canvasSize);
     const gridTemplate = createGrid(canvasSize, '10px');
     createCanvas(container, squares);
