@@ -3,10 +3,14 @@ const sizeInputField = document.getElementById('input-canvas-size');
 const btnChangeSize = document.getElementById('btn-canvas-size');
 const container = document.getElementById('container');
 
+let actualCanvasSize = 0;
 btnChangeSize.onclick = () => {
     const canvasSize = getCanvasSize(sizeInputField, 8, 32, 64);
-    const squares = createSquares(canvasSize);
-    const gridTemplate = createGrid(canvasSize, '10px');
-    createCanvas(container, squares);
-    applyGridStyle(gridTemplate, container);
+    if (canvasSize != actualCanvasSize){
+        actualCanvasSize = canvasSize;
+        const squares = createSquares(canvasSize);
+        const gridTemplate = createGrid(canvasSize, '10px');
+        createCanvas(container, squares);
+        applyGridStyle(gridTemplate, container);
+    }
 }
