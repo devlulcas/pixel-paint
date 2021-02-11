@@ -9,7 +9,7 @@ btnChangeSize.onclick = () => {
     if (canvasSize != actualCanvasSize){
         actualCanvasSize = canvasSize;
         const squares = createSquares(canvasSize);
-        const gridTemplate = createGrid(canvasSize, '10px');
+        const gridTemplate = createGrid(canvasSize, '1em');
         createCanvas(container, squares);
         applyGridStyle(gridTemplate, container);
     }
