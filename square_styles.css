@@ -1,7 +1,6 @@
 .default {
-  border: 1px solid #000000;
+  border: 1px solid #00000070;
   padding: 5px;
-  font-size: 30px;
   text-align: center;
 }
 
