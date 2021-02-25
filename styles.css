@@ -9,7 +9,7 @@ header {
 
 .canvas-config {
   position: absolute;
-  top: 5%;  
+  top: 5%;
 }
 
 footer {
@@ -17,12 +17,12 @@ footer {
   display: grid;
   grid-template-columns: auto auto auto;
   position: absolute;
-  bottom: 0%;
+  bottom: 1.2%;
 }
 
 .footer-elements {
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.8)
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .container-section {
@@ -32,7 +32,6 @@ footer {
   justify-content: center;
   align-items: center;
   background-color: #2196f3;
-  
 }
 .container {
   display: grid;
