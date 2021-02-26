@@ -23,11 +23,7 @@ function getCanvasSize(
 
 function createSquares(canvasSize = 32) {
   let squares = ``;
-  for (
-    let squaresCreated = 0;
-    squaresCreated < canvasSize * canvasSize;
-    squaresCreated++
-  ) {
+  for (let sqrCreated = 0; sqrCreated < canvasSize * canvasSize; sqrCreated++) {
     squares += `<div class="default clean"></div>`;
   }
   return squares;
