@@ -1,0 +1,3 @@
+# Pixel-paint 
+I'll come back later, but for now this project is closed... 
+(And yeah... I know that this thing is full of awful mistakes and the code is crappy...)
