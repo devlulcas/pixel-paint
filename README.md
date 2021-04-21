@@ -1,6 +1,7 @@
 <h1 align="center">🎨 Pixel-paint 🎨</h1>
-# 🚨 I'll come back later, but for now this project is closed... 🚨
-(And yeah... I know that this thing is full of awful mistakes and the code is crappy...)
+
+<h2 align="center">🚨 I'll come back later, but for now this project is closed... 🚨</h2>
+<p align="center">!!!(And yeah... I know that this thing is full of awful mistakes and the code is crappy...)!!!</p>
 
 ## ✏️ Why ?
 I was trying to learn more about DOM and how to creat new elements with event handlers... but was trying to do it withou proper research, just to test if I would suceed.
